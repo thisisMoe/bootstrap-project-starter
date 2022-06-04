@@ -222,3 +222,29 @@ a img {
 a img:hover {
   transform: scale(1.02);
 }
+
+/* Landcape mode  */
+@media screen and (min-width: 576px) {
+  .header-body {
+    font-size: 6rem;
+    padding: 2rem 1rem;
+  }
+
+  .navbar-links {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .toggle-menu {
+    display: none;
+  }
+}
+
+/* Medium Screens */
+@media screen and (min-width: 786px) {}
+
+/* Large screens */
+@media screen and (min-width: 992px) {}
+
+/* Larger screens */
+@media screen and (min-width: 1280px) {}
