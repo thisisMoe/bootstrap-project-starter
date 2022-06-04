@@ -92,6 +92,9 @@ h1 {
 hr {
   width: 200px;
   margin: 3rem 0 3rem 0;
+  border: none;
+  height: 1px;
+  background-color: white;
 }
 
 .expertise-section {
@@ -223,6 +226,26 @@ a img:hover {
   transform: scale(1.02);
 }
 
+.custom-hr {
+  width: 100%;
+  height: 1px;
+  border: none;
+  background-color: white;
+}
+
+.aboutMe-section {
+  padding: 1rem;
+}
+
+.aboutMe-section .button {
+  margin-top: 1.5rem;
+}
+
+.header-background-2 {
+  background-image: url('assets/bg-2.svg');
+  background-position: 100% 86px !important;
+}
+
 /* Landcape mode  */
 @media screen and (min-width: 576px) {
   .header-body {
@@ -241,10 +264,89 @@ a img:hover {
 }
 
 /* Medium Screens */
-@media screen and (min-width: 786px) {}
+@media screen and (min-width: 786px) {
+  .biography-section {
+    flex-wrap: nowrap;
+  }
+
+  .expertise-section {
+    display: flex;
+    gap: 3rem;
+  }
+
+  .expertise-section .button {
+    margin: 2.5rem 0;
+  }
+
+  .aboutMe-section {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .aboutMe-section>div {
+    flex: 1;
+  }
+
+  .aboutMe-section .button {
+    margin-top: 3rem;
+  }
+
+  .projects-section>div:first-child {
+    flex-direction: row;
+  }
+
+  .projects-section>div:first-child>div {
+    width: 100%;
+  }
+}
 
 /* Large screens */
-@media screen and (min-width: 992px) {}
+@media screen and (min-width: 992px) {
+  .header-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .bi-arrow-down {
+    display: none;
+  }
+
+  .bi-arrow-right {
+    display: block;
+  }
+
+  .header-footer>div:nth-child(2) {
+    width: 400px;
+  }
+
+  .header-footer>div:nth-child(3) {
+    width: 120px;
+  }
+
+  .header-footer>div:nth-child(4) {
+    width: 120px;
+  }
+
+  .expertise-section>div:first-child {
+    flex: 1;
+  }
+
+  .expertise-section>div:nth-child(2) {
+    display: flex;
+    gap: 4rem;
+    flex: 2;
+  }
+
+  .aboutMe-section>div:nth-child(2) {
+    align-self: flex-end;
+  }
+}
 
 /* Larger screens */
-@media screen and (min-width: 1280px) {}
+@media screen and (min-width: 1280px) {
+  .header-body {
+    font-size: 11rem;
+  }
+}
